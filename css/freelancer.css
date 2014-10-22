@@ -37,6 +37,7 @@ h6 {
 }
 
 hr.star-light,
+hr.star-other,
 hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
@@ -47,6 +48,7 @@ hr.star-primary {
 }
 
 hr.star-light:after,
+hr.star-other:after,
 hr.star-primary:after {
     content: "\f005";
     display: inline-block;
@@ -73,6 +75,15 @@ hr.star-primary {
 hr.star-primary:after {
     color: #2c3e50;
     background-color: #fff;
+}
+
+hr.star-other {
+    border-color: #2c3e50;
+}
+
+hr.star-other:after {
+    color: #2c3e50;
+    background-color: #f0f0f0;
 }
 
 .img-centered {
@@ -182,6 +193,11 @@ section h2 {
 section.success {
     color: #fff;
     background: #18bc9c;
+}
+
+section.other {
+    color: #2c3e50;
+    background: #f0f0f0;
 }
 
 @media(max-width:767px) {
